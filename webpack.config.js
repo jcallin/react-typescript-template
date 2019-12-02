@@ -73,6 +73,7 @@ module.exports = (env, argv) => {
       minimizer: [
         new UglifyJsPlugin({
           uglifyOptions: {
+            parallel: true,
             output: {
               comments: false
             }
