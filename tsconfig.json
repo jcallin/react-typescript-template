@@ -10,10 +10,11 @@
     "moduleResolution": "node",
     "outDir": "./dist/",
     "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     // "sourceMap": true,
     // "isolatedModules": true,
     "jsx": "react"
   },
-  "include": ["src", "config/setupEnzyme.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "config/setupEnzyme.ts"],
+  "exclude": ["node_modules", "dist", "media"]
 }
